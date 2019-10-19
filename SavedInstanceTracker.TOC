@@ -1,0 +1,10 @@
+## Interface: 11302
+## Title: SavedInstanceTracker
+## Notes: Helps you keep track of dungeon lockouts.
+## Author: Kilal
+## Version: 1.0
+## SavedVariables: SavedInstances_DB
+## SavedVariablesPerCharacter: allowMultipleOfInstance
+
+embeds.xml
+SavedInstanceTracker.lua
