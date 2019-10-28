@@ -2,7 +2,7 @@
 ## Title: SavedInstanceTracker
 ## Notes: Helps you keep track of dungeon lockouts.
 ## Author: Kilal
-## Version: 1.2
+## Version: 1.2.1
 ## SavedVariables: SavedInstances_DB, allowResetRequest
 ## SavedVariablesPerCharacter: allowMultipleOfInstance, lastLocation
 
