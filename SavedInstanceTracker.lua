@@ -5,7 +5,7 @@ local LibAceSerializer = LibStub:GetLibrary("AceSerializer-3.0")
 local LibCompress = LibStub:GetLibrary("LibCompress")
 local LibCompressAddonEncodeTable = LibCompress:GetAddonEncodeTable()
 
-local version = "1.2"
+local version = "1.2.1"
 
 
 function iComm:OnEnable()
@@ -274,6 +274,7 @@ local function EventHandler(self, event, arg1, ...)
 				else
 					-- Set endTime to 0 since the instance is still active
 					SavedInPrint("Player reentered active lockout reseting countdown.");
+					SavedInstances_DB[#SavedInstances_DB].countdownActive = false
 					SavedInstances_DB[#SavedInstances_DB].timeEnd = 0
 				end
 			else
