@@ -1,4 +1,4 @@
-## Interface: 11302
+## Interface: 11303
 ## Title: SavedInstanceTracker
 ## Notes: Helps you keep track of dungeon lockouts.
 ## Author: Kilal

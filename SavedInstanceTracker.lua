@@ -5,7 +5,7 @@ local LibAceSerializer = LibStub:GetLibrary("AceSerializer-3.0")
 local LibCompress = LibStub:GetLibrary("LibCompress")
 local LibCompressAddonEncodeTable = LibCompress:GetAddonEncodeTable()
 
-local version = "1.2.1"
+local version = "1.2.2"
 
 
 function iComm:OnEnable()
