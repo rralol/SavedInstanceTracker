@@ -250,6 +250,14 @@ local function UpdateGroupStatus()
 	end
 end
 
+local function isInPvEInstance(instanceType)
+	if instanceType == "raid" or instanceType == "party" then
+		return true
+	else 
+		return false
+	end
+end
+
 local function EventHandler(self, event, arg1, ...)
 	if event == "ADDON_LOADED" then
 		OnInitialize(event, arg1);
@@ -261,7 +269,7 @@ local function EventHandler(self, event, arg1, ...)
 		UpdateGroupStatus();
 		--Check if in raid or dungeon
 		local inInstance,instanceType = IsInInstance();
-		if inInstance then
+		if inInstance and isInPvEInstance(instanceType) then
 		
 			local instanceName,_,_,_,instanceMaxPlayers,_,_,instanceId,_ = GetInstanceInfo();
 			--Check if an active instance of the same name exists 
