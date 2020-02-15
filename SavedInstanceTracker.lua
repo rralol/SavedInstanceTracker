@@ -234,7 +234,8 @@ local function checkForOfflineReset()
 	--Debug
 	--SavedInPrint("Curzone: "..currentLocation.subZone.. " Lastzone: "..lastLocation.subZone);
 	if currentLocation.instanceId == lastLocation.instanceId and currentLocation.subZone ~= lastLocation.subZone then
-		SavedInPrint("true");
+		--Debug
+		--SavedInPrint("true");
 		return true;
 	else
 		return false;
